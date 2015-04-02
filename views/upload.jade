@@ -3,6 +3,8 @@ block content
     h1= title
     p Please select a file to upload: #{title}
     form(action="/upload", method="post")
-        textarea(fname="text" rows="1" cols="20")
-    input(type="submit", value="Submit text")
+        inpute(type="text", name="title")
+        inpute(type="file", name="upload", multiple="multiple")
+        //textarea(name="text" rows="1" cols="20")
+        input(type="submit", value="Submit text")
     //button(class="btn", data-action="upl").Be Submit
